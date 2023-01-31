@@ -1,0 +1,26 @@
+package FinalRequire;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.*;
+public class MAIN {
+
+    public static void main(String args[]) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        Student theinnov = new Student();
+
+        System.out.println("Enter your name: ");
+        String name = br.readLine();
+
+        System.out.println("Enter your ID_Number: ");
+        int idnumber = Integer.parseInt(br.readLine());
+
+        theinnov.Student(name);
+        theinnov.Student(idnumber);
+
+        System.out.println("\nYour Name is " + theinnov.getName());
+        System.out.println("Your Id_Number is " + theinnov.getIdnumber());
+        System.out.println("You can now go in!");
+    }
+}
