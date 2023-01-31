@@ -1,0 +1,24 @@
+package FinalRequire;
+
+public class Student{
+    private String name;
+    private int idnumber;
+    
+
+    public void Student(String name){
+        this.name = name;
+
+    }
+    public void Student(int idnumber){
+        this.idnumber = idnumber;
+
+    }
+
+    public String getName(){
+        return name;
+    }
+    public int getIdnumber(){
+        return idnumber;
+    }
+
+}
